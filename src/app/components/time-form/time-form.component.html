@@ -1,0 +1,5 @@
+<app-time-picker [time]="fromTime" (onChange)="onFromTimeChange($event)"></app-time-picker>
+{{nowTime | date:'HH:mm' }}
+<app-time-picker [time]="toTime" (onChange)="onToTimeChange($event)"></app-time-picker>
+
+{{(procent * 100).toFixed(0)}}%

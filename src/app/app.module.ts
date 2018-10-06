@@ -3,14 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TimePickerComponent } from './components/time-picker/time-picker.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { TimeFormComponent } from './components/time-form/time-form.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TimePickerComponent,
+    DashboardComponent,
+    TimeFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
