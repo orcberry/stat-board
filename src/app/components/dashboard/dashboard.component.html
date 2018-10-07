@@ -1,1 +1,17 @@
 <app-time-form></app-time-form>
+
+<pre>
+  {{data | json}}
+</pre>
+
+<p>Add Record For:</p>
+<ul>
+  <li *ngFor="let skill of data?.skills">
+    <button type="button" (click)="addSkillRecord(skill)">
+      {{ skill.name }}
+    </button>
+    <button type="button" (click)="removeSkill(skill)">X</button>
+  </li>
+</ul>
+
+<button type="button" (click)="createSkill()">CREATE SKILL</button>

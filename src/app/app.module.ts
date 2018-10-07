@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TimePickerComponent } from './components/time-picker/time-picker.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { TimeFormComponent } from './components/time-form/time-form.component';
+import { DataService } from './services/data.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,9 @@ import { TimeFormComponent } from './components/time-form/time-form.component';
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [
+    DataService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
